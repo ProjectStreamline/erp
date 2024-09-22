@@ -3,9 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const Loader = lazy(() => import('./components/Loader'));
 const FaDashboard = lazy(() => import('./pages/fa/FaDashboard'));
-import FacultyDashboard from './pages/faculty/FacultyDashboard';
 const FacultyDashboard = lazy(() => import('./pages/faculty/FacultyDashboard'));
-import CourseDashboard from './pages/faculty/CourseDashboard';
 const CourseDashboard = lazy(() => import('./pages/faculty/CourseDashboard'));
 const Cutoff = lazy(() => import('./pages/faculty/Cutoff'));
 const MarkEvaluation = lazy(() => import('./pages/faculty/MarkEvaluation'));
@@ -14,7 +12,7 @@ const AdminDashboard = lazy(() => import('./pages/admin/AdminDashboard'));
 const ManageSemester = lazy(() => import('./pages/admin/ManageSemester'));
 const ManageFaculty = lazy(() => import('./pages/admin/ManageFaculty'));
 const  ManageCourses = lazy(() => import('./pages/admin/ManageCourses'));
-const Results = lazy(() => import('./pages/faculty/Results');
+const Results = lazy(() => import('./pages/faculty/Results'));
 const Login = lazy(() => import('./pages/Login'));
 function App() {
   return (
