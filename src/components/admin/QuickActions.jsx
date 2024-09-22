@@ -10,7 +10,7 @@ const QuickActions = () => {
       <h2 className="text-xl font-bold my-4 ml-8">Quick Actions</h2>
       <h2 className="text-xl mb-4 ml-8">
         <button onClick={togglePopup}>
-          <span className="">Add New Faculty +</span>
+          <span className="">Add New Semester +</span>
           {isPopupVisible && <QuickForm popup={togglePopup} />}
         </button>
       </h2>
@@ -22,7 +22,7 @@ const QuickActions = () => {
       </h2>
       <h2 className="text-xl mb-4 ml-8">
         <button onClick={togglePopup}>
-          <span className="">Add New Faculty +</span>
+          <span className="">Add New Course +</span>
           {isPopupVisible && <QuickForm popup={togglePopup} />}
         </button>
       </h2>
