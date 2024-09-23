@@ -1,17 +1,18 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Loader from './components/Loader';
-import FaDashboard from './pages/fa/FaDashboard';
-import FacultyDashboard from './pages/faculty/FacultyDashboard';
-import CourseDashboard from './pages/faculty/CourseDashboard';
-import Cutoff from './pages/faculty/Cutoff';
-import MarkEvaluation from './pages/faculty/MarkEvaluation';
-import EvaluationScheme from './pages/faculty/EvaluationScheme';
-import AdminDashboard from './pages/admin/AdminDashboard';
-import ManageSemester from './pages/admin/ManageSemester';
-import ManageFaculty from './pages/admin/ManageFaculty';
-import ManageCourses from './pages/admin/ManageCourses';
-import Results from './pages/faculty/Results';
+
+const Loader = lazy(() => import('./components/Loader'));
+const FaDashboard = lazy(() => import('./pages/fa/FaDashboard'));
+const FacultyDashboard = lazy(() => import('./pages/faculty/FacultyDashboard'));
+const CourseDashboard = lazy(() => import('./pages/faculty/CourseDashboard'));
+const Cutoff = lazy(() => import('./pages/faculty/Cutoff'));
+const MarkEvaluation = lazy(() => import('./pages/faculty/MarkEvaluation'));
+const EvaluationScheme = lazy(() => import('./pages/faculty/EvaluationScheme'));
+const AdminDashboard = lazy(() => import('./pages/admin/AdminDashboard'));
+const ManageSemester = lazy(() => import('./pages/admin/ManageSemester'));
+const ManageFaculty = lazy(() => import('./pages/admin/ManageFaculty'));
+const  ManageCourses = lazy(() => import('./pages/admin/ManageCourses'));
+const Results = lazy(() => import('./pages/faculty/Results'));
 const Login = lazy(() => import('./pages/Login'));
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
             path="/faculty/evaluation-scheme"
             element={<EvaluationScheme />}
           />
-          <Route path="/faculty/results" element={<Results />} />
+          <Route path="/results" element={<Results />} />
 
           {/* admin routes */}
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
