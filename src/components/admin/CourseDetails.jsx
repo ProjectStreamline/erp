@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import QuickCourseForm from './QuickCourseForm';
 const CourseDetails = ({ course }) => {
   const { register, handleSubmit } = useForm();
   const [data, setData] = useState('');
@@ -56,21 +57,21 @@ const CourseDetails = ({ course }) => {
           <p>Lab Availability: {course.lab ? 'Available' : 'NA'}</p>
         </div>
       </div>
-      <div className="flex flex-row justify-between mx-8 mt-4">
+      <div className="flex flex-row justify-between m-4">
         <button className="bg-white p-1 rounded-xl font-bold">
           Delete this Course
         </button>
 
-        <button className="bg-white p-1 px-4 rounded-xl">
+        <button className="bg-white p-1 px-4  rounded-xl">
           <div className="flex justify-center align-bottom font-bold">
             <button onClick={togglePopup}>
               <span className="">Add New Course</span>
             </button>
           </div>
-          {isPopupVisible && <QuickForm />}
+          {isPopupVisible && <QuickCourseForm popup={togglePopup} />}
         </button>
 
-        <button className="bg-white p-1 px-8 rounded-xl font-bold">
+        <button className="bg-white p-1 px-4 rounded-xl font-bold">
           Edit this Course
         </button>
       </div>

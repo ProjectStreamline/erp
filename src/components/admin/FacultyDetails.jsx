@@ -3,7 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import avatar from '../../assets/Avatar.png';
-import QuickForm from './QuickForm';
+import QuickFacultyForm from './QuickFacultyForm';
 const FacultyDetails = ({ faculty }) => {
   const { register, handleSubmit } = useForm();
   const [data, setData] = useState('');
@@ -69,7 +69,7 @@ const FacultyDetails = ({ faculty }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-between mx-8">
+      <div className="flex flex-row justify-between m-4">
         <button className="bg-white p-1 rounded-xl font-bold">
           Discharge Faculty
         </button>
@@ -80,7 +80,7 @@ const FacultyDetails = ({ faculty }) => {
               <span className="">Add New Faculty</span>
             </button>
           </div>
-          {isPopupVisible && <QuickForm />}
+          {isPopupVisible && <QuickFacultyForm popup={togglePopup} />}
         </button>
 
         <button className="bg-white p-1 px-8 rounded-xl font-bold">

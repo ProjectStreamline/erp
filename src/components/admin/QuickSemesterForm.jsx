@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
-const QuickForm = ({ popup }) => {
+const QuickSemesterForm = ({ popup }) => {
   const { register, handleSubmit } = useForm();
   const [data, setData] = useState('');
 
@@ -88,4 +88,4 @@ const QuickForm = ({ popup }) => {
   );
 };
 
-export default QuickForm;
+export default QuickSemesterForm;

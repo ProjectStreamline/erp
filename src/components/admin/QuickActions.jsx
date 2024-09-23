@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import QuickForm from './QuickForm';
+import QuickFacultyForm from './QuickFacultyForm';
+import QuickCourseForm from './QuickCourseForm';
 const QuickActions = () => {
   const [isPopupVisible, setPopupVisible] = useState(false);
   const togglePopup = () => {
@@ -11,19 +12,19 @@ const QuickActions = () => {
       <h2 className="text-xl mb-4 ml-8">
         <button onClick={togglePopup}>
           <span className="">Add New Semester +</span>
-          {isPopupVisible && <QuickForm popup={togglePopup} />}
+          {isPopupVisible && <QuickFacultyForm popup={togglePopup} />}
         </button>
       </h2>
       <h2 className="text-xl mb-4 ml-8">
         <button onClick={togglePopup}>
           <span className="">Add New Faculty +</span>
-          {isPopupVisible && <QuickForm popup={togglePopup} />}
+          {isPopupVisible && <QuickFacultyForm popup={togglePopup} />}
         </button>
       </h2>
       <h2 className="text-xl mb-4 ml-8">
         <button onClick={togglePopup}>
           <span className="">Add New Course +</span>
-          {isPopupVisible && <QuickForm popup={togglePopup} />}
+          {isPopupVisible && <QuickCourseForm popup={togglePopup} />}
         </button>
       </h2>
     </div>

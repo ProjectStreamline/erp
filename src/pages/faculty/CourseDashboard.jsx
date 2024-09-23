@@ -23,7 +23,7 @@ const CourseDashboard = () => {
           {/* mark evaluation */}
           <DashboardCard
             icon={MarkEvaluation}
-            text="MARK EVALUATION"
+            text="MARKS EVALUATION"
             url="/faculty/marks-evaluation"
           />
           {/* cutoff */}

@@ -4,7 +4,7 @@ const EvalSchemeCard = () => {
   const scheme = [
     { exam: 'Sessional - 1', marks: 15 },
     { exam: 'Sessional - 2', marks: 15 },
-    { exam: 'End Semester', marks: 60 },
+    { exam: 'End Semester', marks: 50 },
   ];
   const { register, handleSubmit } = useForm();
   const [data, setData] = useState('');

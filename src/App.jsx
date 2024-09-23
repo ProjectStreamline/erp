@@ -11,7 +11,7 @@ const EvaluationScheme = lazy(() => import('./pages/faculty/EvaluationScheme'));
 const AdminDashboard = lazy(() => import('./pages/admin/AdminDashboard'));
 const ManageSemester = lazy(() => import('./pages/admin/ManageSemester'));
 const ManageFaculty = lazy(() => import('./pages/admin/ManageFaculty'));
-const  ManageCourses = lazy(() => import('./pages/admin/ManageCourses'));
+const ManageCourses = lazy(() => import('./pages/admin/ManageCourses'));
 const Results = lazy(() => import('./pages/faculty/Results'));
 const Login = lazy(() => import('./pages/Login'));
 function App() {

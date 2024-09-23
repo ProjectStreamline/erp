@@ -49,12 +49,9 @@ const AdminNavbar = () => {
 
       {/* logout */}
       <div className="mt-auto mb-8">
-        <Link
-          className="bg-white text-black rounded-full w-32 h-12 flex items-center justify-center hover:text-black hover:bg-blue-500 duration-500"
-          to={'/'}
-        >
+        <div className="bg-white text-black rounded-full w-32 h-12 flex items-center justify-center hover:text-black hover:bg-blue-500 duration-500">
           Logout
-        </Link>
+        </div>
       </div>
       <div className="text-center text-sm mb-auto">&copy; 2024 IIITN ERP</div>
     </div>

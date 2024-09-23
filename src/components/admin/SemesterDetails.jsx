@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import QuickForm from './QuickForm';
+import QuickSemesterForm from './QuickSemesterForm';
 
 const SemesterDetails = ({ semester }) => {
   const { register, handleSubmit } = useForm();
@@ -73,7 +73,7 @@ const SemesterDetails = ({ semester }) => {
               <span className="">Add New Semester</span>
             </button>
           </div>
-          {isPopupVisible && <QuickForm />}
+          {isPopupVisible && <QuickSemesterForm popup={togglePopup} />}
         </button>
 
         <button className="bg-white p-1 px-8 rounded-xl font-bold">
